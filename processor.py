@@ -36,7 +36,7 @@ for file in onlyfiles:
     suffix = filename[len(filename) - 1]
     if suffix.lower() == "jpg":
         #check if the folder is over 150 megabytes
-        if files.GetDirectorySize(path + "\\images\\" + str(folderCount)) >= 150:
+        if files.GetDirectorySize(path + "\\images\\" + str(folderCount)) >= 200:
             folderCount = folderCount + 1
             #make the new folder
             if not os.path.exists(path + "\\images\\" + str(folderCount)):
